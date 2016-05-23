@@ -38,7 +38,11 @@
 				<element name="price" type="integer" />
 			</choice>
 		</sequence>
+		<attribute name="id" type="m:Id" use="required" />
 	</complexType>
+	<simpleType name="Id">
+		<restriction base="string">
+			<pattern value="[0-9]+" />
+		</restriction>
+	</simpleType>
 </schema>
-
-<!-- weight="грамм"   currency="руб"  amount="штук"-->

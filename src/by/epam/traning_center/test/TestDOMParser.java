@@ -1,21 +1,18 @@
 package by.epam.traning_center.test;
 
-import by.epam.traning_center.parser.IndividualDOMParser;
-import by.epam.traning_center.parser.PrintIndividualDOMParserMenu;
-import by.epam.traning_center.xerce.XerceParserMenu;
+import by.epam.traning_center.entity.Document;
+import by.epam.traning_center.service.IndividualDOMParser;
+import by.epam.traning_center.view.PrintIndividualDOMParserMenu;
 
 
 public class TestDOMParser {
 
 	public static void main(String[] args) {
-		XerceParserMenu parser = new XerceParserMenu();
-		parser.parseFile("src/by/epam/traning_center/xml/menu.xml");
-		
-		System.out.println("--------PERSONAL PARSER-------------");
 		
 		IndividualDOMParser personalParser = new IndividualDOMParser();
-		personalParser.readFile("src/by/epam/traning_center/xml/menu.xml");
-		PrintIndividualDOMParserMenu printParsedMenu = new PrintIndividualDOMParserMenu(personalParser.getRootElement());
+		personalParser.parseFile("src/by/epam/traning_center/xml/menu.xml");
+		Document document = personalParser.getDocument();
+		PrintIndividualDOMParserMenu printParsedMenu = new PrintIndividualDOMParserMenu(document.getRootElement());
 		printParsedMenu.printResult();
 	}
 

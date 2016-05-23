@@ -1,4 +1,4 @@
-package by.epam.traning_center.model;
+package by.epam.traning_center.entity;
 
 public class Text extends Node{
 	private String content;
