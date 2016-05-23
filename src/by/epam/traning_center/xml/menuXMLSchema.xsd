@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.epam.tc.com/menuXMLSchema"
+	xmlns:m="http://www.epam.tc.com/menuXMLSchema">
+	<element name="menu-list">
+		<complexType>
+			<sequence>
+				<element name="cold-appetizers" type="m:ColdAppetizer" />
+				<element name="hot-appetizers" type="m:HotAppetizer" />
+				<element name="breakfasts" type="m:Breakfast" />
+			</sequence>
+		</complexType>
+	</element>
+	<complexType name="ColdAppetizer">
+		<sequence minOccurs="1" maxOccurs="unbounded">
+			<element name="cold-appetizer" type="m:Dish" />
+		</sequence>
+	</complexType>
+	<complexType name="HotAppetizer">
+		<sequence minOccurs="1" maxOccurs="unbounded">
+			<element name="hot-appetizer" type="m:Dish" />
+		</sequence>
+	</complexType>
+	<complexType name="Breakfast">
+		<sequence minOccurs="1" maxOccurs="unbounded">
+			<element name="breakfast" type="m:Dish" />
+		</sequence>
+	</complexType>
+	<complexType name="Dish">
+		<sequence>
+			<element name="name" type="string" />
+			<choice minOccurs="0" maxOccurs="1">
+				<element name="description" type="string" />
+			</choice>
+			<choice minOccurs="0" maxOccurs="1">
+				<element name="portion" type="string" />
+			</choice>
+			<choice minOccurs="0" maxOccurs="1">
+				<element name="price" type="integer" />
+			</choice>
+		</sequence>
+	</complexType>
+</schema>
+
+<!-- weight="грамм"   currency="руб"  amount="штук"-->

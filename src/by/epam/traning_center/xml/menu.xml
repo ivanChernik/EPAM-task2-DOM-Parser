@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<m:menu-list xmlns:m="http://www.epam.tc.com/menuXMLSchema"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.epam.tc.com/menuXMLSchema menuXMLSchema.xsd">
+	<cold-appetizers>
+		<cold-appetizer>
+			<name>Ассорти рыбное</name>
+			<description>Слабосоленая форель, семга</description>
+			<portion>100/20/15</portion>
+		</cold-appetizer>
+		<cold-appetizer>
+			<name>Овощной букет</name>
+			<description>Корейская морковь,капустаю фунчоза</description>
+			<portion>100/20/15</portion>
+		</cold-appetizer>
+		<cold-appetizer>
+			<name>Соленья по-домашнему</name>
+			<description>Маринованные овощи</description>
+			<portion>150/10</portion>
+		</cold-appetizer>
+	</cold-appetizers>
+	<hot-appetizers>
+		<hot-appetizer>
+			<name>Лобио с шампинтонами</name>
+			<description>Фасоль с шампиньонами,грецкий орех, фунчоза</description>
+			<portion>100/20/15</portion>
+			<price>105</price>
+		</hot-appetizer>
+		<hot-appetizer>
+			<name>Мидии по-турецки</name>
+			<description>Мидии, сыр, грецкий орех</description>
+			<portion>150/30</portion>
+			<price>190</price>
+		</hot-appetizer>
+		<hot-appetizer >
+			<name>Эскарго</name>
+			<description>Виноградные улитки по бургундски</description>
+			<portion>12</portion>
+			<price >230</price>
+		</hot-appetizer>
+	</hot-appetizers>
+	<breakfasts >
+		<breakfast>
+			<name>Глазунья</name>
+			<description>Яйца</description>
+			<portion>150</portion>
+		</breakfast>
+		<breakfast>
+			<name>Омлет</name>
+			<portion>100</portion>
+		</breakfast>	
+		<breakfast>
+			<name>Блинчики с мясом</name>
+			<description>Жаренные блинчики с мясом</description>
+			<portion>150</portion>
+		</breakfast>	
+	</breakfasts>
+</m:menu-list>
