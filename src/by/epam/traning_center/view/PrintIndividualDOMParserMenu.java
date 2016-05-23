@@ -10,11 +10,12 @@ import by.epam.traning_center.entity.Text;
 public class PrintIndividualDOMParserMenu {
 	private Element rootElement;
 
-	public PrintIndividualDOMParserMenu(Element rootElement) {
-		this.rootElement = rootElement;
+	public PrintIndividualDOMParserMenu() {
+		
 	}
 
-	public void printResult() {
+	public void printResult(Element rootElement) {
+		this.rootElement = rootElement;
 		System.out.println(rootElement.getTagName());
 		printAttributes(rootElement);
 		List<Node> nodeList = rootElement.getNodeList();
