@@ -2,10 +2,10 @@ package by.epam.traning_center.view;
 
 import java.util.List;
 
-import by.epam.traning_center.entity.Attribute;
-import by.epam.traning_center.entity.Element;
-import by.epam.traning_center.entity.Node;
-import by.epam.traning_center.entity.Text;
+import by.epam.traning_center.domain.Attribute;
+import by.epam.traning_center.domain.Element;
+import by.epam.traning_center.domain.Node;
+import by.epam.traning_center.domain.Text;
 
 public class PrintIndividualDOMParserMenu {
 	private Element rootElement;

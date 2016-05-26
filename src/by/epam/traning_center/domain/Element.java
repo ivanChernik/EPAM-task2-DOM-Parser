@@ -1,4 +1,4 @@
-package by.epam.traning_center.entity;
+package by.epam.traning_center.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +29,7 @@ public class Element extends Node {
 		nodeList.add(inputNode);
 	}
 
+
 	public List<Node> getNodeList() {
 		return nodeList;
 	}
@@ -39,5 +40,11 @@ public class Element extends Node {
 
 	public String getTagName() {
 		return tagName;
+	}
+	
+
+	@Override
+	public String toString() {
+		return "Element [tagName=" + tagName + "]";
 	}
 }

@@ -1,4 +1,4 @@
-package by.epam.traning_center.entity;
+package by.epam.traning_center.domain;
 
 public class Attribute {
 	private String name;

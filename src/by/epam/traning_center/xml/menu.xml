@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <m:menu-list xmlns:m="http://www.epam.tc.com/menuXMLSchema"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.epam.tc.com/menuXMLSchema menuXMLSchema.xsd">
-	<cold-appetizers>
-		<cold-appetizer id="1">
-			<name>Ассорти рыбное</name>
-			<description>Слабосоленая форель, семга</description>
-			<portion>100/20/15</portion>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.epam.tc.com/menuXMLSchema menuXMLSchema.xsd">
+	<cold-appetizers><cold-appetizer id="1"><name>
+	Ассорти 
+	рыбное
+	</name>   <description>Слабосоленая форель, семга</description>
+			<portion>100/
+			20/
+			15</portion>
 		</cold-appetizer>
 		<cold-appetizer id="2">
 			<name>Овощной букет</name>
@@ -29,17 +31,18 @@ xsi:schemaLocation="http://www.epam.tc.com/menuXMLSchema menuXMLSchema.xsd">
 		<hot-appetizer id="5">
 			<name>Мидии по-турецки</name>
 			<description>Мидии, сыр, грецкий орех</description>
-			<portion>150/30</portion>
+			<portion>150/30
+			</portion>
 			<price>190</price>
 		</hot-appetizer>
 		<hot-appetizer id="6">
 			<name>Эскарго</name>
 			<description>Виноградные улитки по бургундски</description>
 			<portion>12</portion>
-			<price >230</price>
+			<price>230</price>
 		</hot-appetizer>
 	</hot-appetizers>
-	<breakfasts >
+	<breakfasts>
 		<breakfast id="7">
 			<name>Глазунья</name>
 			<description>Яйца</description>
@@ -48,11 +51,11 @@ xsi:schemaLocation="http://www.epam.tc.com/menuXMLSchema menuXMLSchema.xsd">
 		<breakfast id="8">
 			<name>Омлет</name>
 			<portion>100</portion>
-		</breakfast>	
+		</breakfast>
 		<breakfast id="9">
 			<name>Блинчики с мясом</name>
 			<description>Жаренные блинчики с мясом</description>
 			<portion>150</portion>
-		</breakfast>	
+		</breakfast>
 	</breakfasts>
 </m:menu-list>

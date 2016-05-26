@@ -1,4 +1,4 @@
-package by.epam.traning_center.entity;
+package by.epam.traning_center.domain;
 
 public class Document {
 	private Element rootElement;
